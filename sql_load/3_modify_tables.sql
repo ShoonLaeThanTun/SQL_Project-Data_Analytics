@@ -28,7 +28,6 @@ Possible Errors:
 
 */
 
-LIMIT 10;
 COPY skills_dim
 FROM '/Users/shoontun/Documents/SQL_Project-Data_Analytics/csv_files/company_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
