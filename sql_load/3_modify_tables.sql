@@ -28,8 +28,7 @@ Possible Errors:
 
 */
 
-COPY skills_dim
-FROM '/Users/shoontun/Documents/SQL_Project-Data_Analytics/csv_files/company_dim.csv'
+FROM '/Users/shoontun/Documents/SQL_Project-Data_Analytics/csv_files/skills_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY job_postings_fact
