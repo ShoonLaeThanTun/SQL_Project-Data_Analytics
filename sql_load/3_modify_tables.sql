@@ -27,7 +27,7 @@ Possible Errors:
 \copy skills_job_dim FROM '[Insert File Path]/skills_job_dim.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 */
-
+COPY skills_dim
 FROM '/Users/shoontun/Documents/SQL_Project-Data_Analytics/csv_files/skills_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 

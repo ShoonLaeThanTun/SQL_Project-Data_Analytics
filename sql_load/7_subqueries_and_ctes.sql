@@ -60,7 +60,7 @@ FROM skills_dim sd
 left join skill_id_count sic
     on sd.skill_id = sic.skill_id
 ORDER BY skill_count Desc
-LIMIT 10;
+
 
 /* Determine the size category ('Small', 'Medium', or 'Large') 
 for each company by first identifying the number of job postings they have.
@@ -89,7 +89,7 @@ select cd.name,
 from
     company_dim cd 
 left join company_size_category csc
-    on cd.company_id = csc.company_id
+    on cd.company_id = csc.company_id;
 
 
 /* Find the count of the number of remote job postings per skill
@@ -123,5 +123,4 @@ inner join remote_job_skill_count as rjsc
         on sd.skill_id = rjsc.skill_id
 Order by 
         skill_count DESC
-LIMIT 10;
 
